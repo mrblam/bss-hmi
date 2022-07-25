@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>UI/images/bp.png</file>
+        <file>UI/images/view_login.png</file>
+        <file>UI/images/view_user.png</file>
+        <file>UI/images/view_bp.png</file>
+        <file>UI/images/view_swap_state.png</file>
+        <file>UI/images/bar.png</file>
+        <file>UI/images/v5/bpview-20.png</file>
+        <file>UI/images/v5/bpview-40.png</file>
+        <file>UI/images/v5/bpview-60.png</file>
+        <file>UI/images/v5/continue.png</file>
+        <file>UI/images/v5/Custom Size – 1.png</file>
+        <file>UI/images/v5/login.png</file>
+        <file>UI/images/v5/mainview.png</file>
+        <file>UI/images/v5/mainview0.png</file>
+        <file>UI/images/v5/mainview1.png</file>
+        <file>UI/images/v5/swapview-putin0.png</file>
+        <file>UI/images/v5/swapview-putin1.png</file>
+        <file>UI/images/v5/swapview-putin2.png</file>
+        <file>UI/images/v5/swapview-putin3.png</file>
+        <file>UI/images/v5/swapview-putin4.png</file>
+        <file>UI/images/v5/userview.png</file>
+        <file>UI/images/v5/qr_code.png</file>
+    </qresource>
+</RCC>

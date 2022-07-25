@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>UI/images/icon/qr_code.png</file>
+        <file>UI/images/mainview2.png</file>
+        <file>UI/images/mainview1.png</file>
+    </qresource>
+</RCC>
