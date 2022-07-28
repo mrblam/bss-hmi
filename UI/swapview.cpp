@@ -31,7 +31,7 @@ SwapView::SwapView(CabinetCom* cab, QWidget *parent) :
     //this->cabCom->getSwapRecord()->setState(SWAP_RECORD_ST_SELECT_EMPTY_CAB);
     guiUpdateSwapState(this->cabCom->getSwapRecord());// mo ra khoang trong
     startTimeoutTimer(1000);
-    connectMonitor::getConnectionMonitor()->checkui(UI_DISPLAY_SWAPRECORD,true);
+    connectMonitor::getConnectionMonitor()->checkUI(UI_DISPLAY_SWAPRECORD,true);
 }
 
 void SwapView::guiUpdateSwapState(const SwapRecord* swapRecord)
@@ -192,7 +192,7 @@ void SwapView::startTimeoutTimer(const uint32_t ms)
 
 SwapView::~SwapView()
 {
-    connectMonitor::getConnectionMonitor()->checkui(UI_DISPLAY_SWAPRECORD,false);
+    connectMonitor::getConnectionMonitor()->checkUI(UI_DISPLAY_SWAPRECORD,false);
     delete ui;
 }
 

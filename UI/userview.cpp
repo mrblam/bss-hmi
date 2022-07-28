@@ -33,12 +33,12 @@ UserView::UserView(const User* user,QWidget *parent) :
     userActionTimeout->start(20000);
     timeoutProgressBar->start(10);
     SoundExecution::getSoundExecution()->play(USER_VIEW);
-    connectMonitor::getConnectionMonitor()->checkui(UI_DISPLAY_USER_VIEW,true);
+    connectMonitor::getConnectionMonitor()->checkUI(UI_DISPLAY_USER_VIEW,true);
 }
 
 UserView::~UserView()
 {
-    connectMonitor::getConnectionMonitor()->checkui(UI_DISPLAY_USER_VIEW,false);
+    connectMonitor::getConnectionMonitor()->checkUI(UI_DISPLAY_USER_VIEW,false);
     delete ui;
 }
 void UserView::setTimeoutProgressBarValue(){

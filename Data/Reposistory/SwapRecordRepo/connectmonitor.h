@@ -6,10 +6,8 @@
 #include <QTcpServer>
 #include <QProcess>
 #include <QTimer>
-// IPC app1 (server) --- HMI (client)
-#define TCP_SERVER_PORT_WRITE 54321
-// IPC app1 (client) --- HMI (server)
-#define TCP_SERVER_PORT_READ    12345
+// IPC bss-hmi (client) --- hmi-monitor (server)
+#define TCP_SERVER_PORT    12345
 typedef enum UI_DISPLAY{
     UI_DISPLAY_LOGIN,
     UI_DISPLAY_SWAPRECORD,
@@ -23,11 +21,10 @@ class connectMonitor : public QObject
 public:
     explicit connectMonitor(QObject *parent = nullptr);
     static connectMonitor* getConnectionMonitor();
-    void checkui(UI_DISPLAY uiDisplay, bool status);
-    void connectToLocalServer();
-//    void
+    void checkUI(UI_DISPLAY uiDisplay, bool status);
+    void connectToLocalServer(const char* data);
+
 public slots:
-    void readMessage();
 
 
 private:

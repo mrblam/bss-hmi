@@ -41,12 +41,12 @@ Login::Login(BSSMqttClient* mqttClient, QWidget *parent) :
     runProgressBar->start(10);
     ui->btnLogin->setFocus();
     SoundExecution::getSoundExecution()->play(LOGIN_VIEW);
-    connectMonitor::getConnectionMonitor()->checkui(UI_DISPLAY_LOGIN,true);
+    connectMonitor::getConnectionMonitor()->checkUI(UI_DISPLAY_LOGIN,true);
 }
 
 Login::~Login()
 {
-    connectMonitor::getConnectionMonitor()->checkui(UI_DISPLAY_LOGIN,false);
+    connectMonitor::getConnectionMonitor()->checkUI(UI_DISPLAY_LOGIN,false);
     delete ui;
 }
 void Login::setValueTimeoutBar(){

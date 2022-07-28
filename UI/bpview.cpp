@@ -19,12 +19,12 @@ BPView::BPView(const Cabinet* cab,QWidget *parent) :
     bpViewTimeoutProgressBar->start(10);
     showBPData();
     SoundExecution::getSoundExecution()->play(BP_VIEW);
-    connectMonitor::getConnectionMonitor()->checkui(UI_DISPLAY_BP_VIEW,true);
+    connectMonitor::getConnectionMonitor()->checkUI(UI_DISPLAY_BP_VIEW,true);
 }
 
 BPView::~BPView()
 {
-    connectMonitor::getConnectionMonitor()->checkui(UI_DISPLAY_BP_VIEW,false);
+    connectMonitor::getConnectionMonitor()->checkUI(UI_DISPLAY_BP_VIEW,false);
     delete ui;
 }
 

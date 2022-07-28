@@ -25,12 +25,12 @@ Continue::Continue(const CabinetCom* cab, QWidget *parent) :
     connect(this, &Continue::destroyed, continueActionTimeout , &QTimer::deleteLater);
     continueActionTimeout->start(10000);
     timeoutContinueProgressBar->start(10);
-    connectMonitor::getConnectionMonitor()->checkui(UI_DISPLAY_CONTINUE,true);
+    connectMonitor::getConnectionMonitor()->checkUI(UI_DISPLAY_CONTINUE,true);
 }
 
 Continue::~Continue()
 {
-    connectMonitor::getConnectionMonitor()->checkui(UI_DISPLAY_CONTINUE,false);
+    connectMonitor::getConnectionMonitor()->checkUI(UI_DISPLAY_CONTINUE,false);
     delete ui;
 }
 void Continue::setValueTimeoutProgressBar(){
