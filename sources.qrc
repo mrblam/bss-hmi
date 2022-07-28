@@ -1,0 +1,58 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>UI/images/SELEX SBS icon/Group -10.png</file>
+        <file>UI/images/SELEX SBS icon/Group 409.png</file>
+        <file>UI/images/SELEX SBS icon/Group 408.png</file>
+        <file>UI/images/SELEX SBS icon/Group 395.png</file>
+        <file>UI/images/SELEX SBS icon/Group 394.png</file>
+        <file>UI/images/SELEX SBS icon/Group 383.png</file>
+        <file>UI/images/SELEX SBS icon/Group 381.png</file>
+        <file>UI/images/SELEX SBS icon/Group 374.png</file>
+        <file>UI/images/SELEX SBS icon/Group 373.png</file>
+        <file>UI/images/SELEX SBS icon/Group 372.png</file>
+        <file>UI/images/SELEX SBS icon/Group 371.png</file>
+        <file>UI/images/SELEX SBS icon/Group 370.png</file>
+        <file>UI/images/SELEX SBS icon/Group 369.png</file>
+        <file>UI/images/SELEX SBS icon/Group 368.png</file>
+        <file>UI/images/SELEX SBS icon/Group 367.png</file>
+        <file>UI/images/SELEX SBS icon/Group 366.png</file>
+        <file>UI/images/SELEX SBS icon/Group 365.png</file>
+        <file>UI/images/SELEX SBS icon/Group 364.png</file>
+        <file>UI/images/SELEX SBS icon/Group 363.png</file>
+        <file>UI/images/SELEX SBS icon/Group 362.png</file>
+        <file>UI/images/SELEX SBS icon/Group 361.png</file>
+        <file>UI/images/SELEX SBS icon/Group 161.png</file>
+        <file>UI/images/SELEX SBS icon/Ellipse 5.png</file>
+        <file>UI/images/SELEX SBS icon/done.png</file>
+        <file>UI/images/SELEX SBS icon/battery station3.158.png</file>
+        <file>UI/images/userview.png</file>
+        <file>UI/images/login</file>
+        <file>UI/images/Custom Size – 14.png</file>
+        <file>UI/images/Custom Size – 9.png</file>
+        <file>UI/images/Custom Size – 7.png</file>
+        <file>UI/images/Custom Size – 2.png</file>
+        <file>UI/images/Custom Size – 1.png</file>
+        <file>UI/images/Custom Size - 6.png</file>
+    </qresource>
+    <qresource prefix="/sounds">
+        <file>UI/sound/voices/wrong-pass.mp3</file>
+        <file>UI/sound/voices/userview.mp3</file>
+        <file>UI/sound/voices/suceess-swap-recervie-pin-number.mp3</file>
+        <file>UI/sound/voices/put-pin-into-cab.mp3</file>
+        <file>UI/sound/voices/login-view.mp3</file>
+        <file>UI/sound/voices/continue.mp3</file>
+        <file>UI/sound/voices/close-door.mp3</file>
+        <file>UI/sound/voices/checking-battery.mp3</file>
+        <file>UI/sound/voices/bpview.mp3</file>
+        <file>UI/sound/voices/6.mp3</file>
+        <file>UI/sound/voices/5.mp3</file>
+        <file>UI/sound/voices/4.mp3</file>
+        <file>UI/sound/voices/3.mp3</file>
+        <file>UI/sound/voices/2.mp3</file>
+        <file>UI/sound/voices/1.mp3</file>
+        <file>UI/sound/voices/thank-for-sevice.mp3</file>
+        <file>UI/sound/voices/open-door.mp3</file>
+        <file>UI/sound/voices/bat-run-out.mp3</file>
+        <file>UI/sound/voices/bat-assign-timeout.mp3</file>
+    </qresource>
+</RCC>

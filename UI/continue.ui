@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Continue</class>
+ <widget class="QMainWindow" name="Continue">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>1280</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget{
+border-image: url(:/img/UI/images/Custom Size – 9.png);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>920</y>
+      <width>701</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="btnCancel">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;
+background-image: url(:/img/UI/images/SELEX SBS icon/Group 395.png);
+background-repeat: no-repeat;
+text-decoration: none;
+background-position:left top;
+background-position: center;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>70</width>
+         <height>19</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnContinue">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: transparent;
+background-image: url(:/img/UI/images/SELEX SBS icon/Group 371.png);
+background-repeat: no-repeat;
+text-decoration: none;
+background-position:left top;
+background-position: center;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QProgressBar" name="timeoutBar">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>1240</y>
+      <width>800</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar::chunk {
+	background-color: 	qlineargradient( x1: 0, y1 : 0, x2: 1,  y2: 0, stop:0.8 cyan, stop:0.9 white, stop: 0.95 cyan );		
+	border-radius:4px;
+}
+QProgressBar {
+	border: 0px; 
+	border-radius: 4px;
+	background: rgb(136, 138, 133); 
+	padding: 0px; 
+	margin-right: 4px;
+}</string>
+    </property>
+    <property name="maximum">
+     <number>20000</number>
+    </property>
+    <property name="value">
+     <number>20000</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblIconInform">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>410</y>
+      <width>140</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/UI/images/SELEX SBS icon/done.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblTextInform">
+    <property name="geometry">
+     <rect>
+      <x>55</x>
+      <y>110</y>
+      <width>691</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>UTM BryantLG</family>
+      <pointsize>29</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+qproperty-alignment: AlignCenter;
+color: rgb(0, 255, 224);
+}</string>
+    </property>
+    <property name="text">
+     <string>Đổi pin thành công
+ bạn có muốn tiếp tục?</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelCountDowTimeout">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>1208</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>UTM BryantLG</family>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(15, 45, 208);</string>
+    </property>
+    <property name="text">
+     <string>Thời gian còn lại:20giây</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

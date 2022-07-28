@@ -1,0 +1,20 @@
+QPushButton, QLineEdit, QLabel{
+border:none;
+outline:none;
+background: none;
+        font: 15px "UTM Hanzel";
+        color: rgb(141, 198, 255);
+}
+
+QLabel#lblState{
+        font: 100px "UTM Hanzel";
+}
+
+QLabel#lblUserName{
+        font: 48px "UTM Helve";
+}
+
+QPushButton:pressed {
+        color: rgb(255, 204, 102);
+}
+
