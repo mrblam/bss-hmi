@@ -27,7 +27,7 @@ BSS::BSS(uint32_t cab_num)
         cab->setFanState(FAN_ST_ON);
         cabinets.append(cab);
     }
-    setSerialNumber("BSS-V1.0");
+    setSerialNumber("BSS-V4.0");
     setState(BSS_ST_INIT);
 }
 

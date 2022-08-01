@@ -13,12 +13,12 @@ void connectMonitor::checkUI(UI_DISPLAY uiDisplay, bool status)
     case UI_DISPLAY_BP_VIEW:
         if(status)
         {
-            connectToLocalServer("BP view open");
+            connectToLocalServer(":UI,BP view open*");
             qDebug()<<"BP view open";
         }
         else
         {
-            connectToLocalServer("BP view close");
+            connectToLocalServer(":UI,BP view close*");
             qDebug()<<"BP view close";
         }
         break;
@@ -26,12 +26,12 @@ void connectMonitor::checkUI(UI_DISPLAY uiDisplay, bool status)
     case UI_DISPLAY_CONTINUE:
         if(status)
         {
-            connectToLocalServer("UI display continue open");
+            connectToLocalServer(":UI,Display continue open*");
             qDebug()<<"UI display continue open";
         }
         else
         {
-            connectToLocalServer("UI display continue close");
+            connectToLocalServer(":UI,Display continue close*");
             qDebug()<<"UI display continue close";
         }
         break;
@@ -39,24 +39,24 @@ void connectMonitor::checkUI(UI_DISPLAY uiDisplay, bool status)
     case UI_DISPLAY_LOGIN:
         if(status)
         {
-            connectToLocalServer("UI dislay login open");
+            connectToLocalServer(":H,U,O*");
             qDebug()<<"LOGIN OPEN";
         }
         else
         {
-            connectToLocalServer("UI dislay login close");
+            connectToLocalServer(":H,U,C*");
             qDebug()<<"LOGIN CLOSE";
         }
         break;
     case UI_DISPLAY_SWAPRECORD:
         if(status)
         {
-            connectToLocalServer("UI dislay swaprecord open");
+            connectToLocalServer(":UI,Dislay swaprecord open*");
             qDebug()<<"UI_DISPLAY_SWAPRECORD Open";
         }
         else
         {
-            connectToLocalServer("UI dislay swaprecord close");
+            connectToLocalServer(":UI,Dislay swaprecord close*");
             qDebug()<<"UI dislay swaprecord close";
         }
         break;
@@ -64,13 +64,26 @@ void connectMonitor::checkUI(UI_DISPLAY uiDisplay, bool status)
     case UI_DISPLAY_USER_VIEW:
         if(status)
         {
-            connectToLocalServer("UI dislay user view open");
+            connectToLocalServer(":UI,Dislay user view open*");
             qDebug()<<"UI dislay user view open";
         }
         else
         {
-            connectToLocalServer("UI dislay user view close");
+            connectToLocalServer(":UI,Dislay user view close*");
             qDebug()<<"UI dislay user view close";
+        }
+        break;
+
+    case UI_DISPLAY_DEFAULT:
+        if(status)
+        {
+            connectToLocalServer(":S,D,O*");
+            qDebug()<<"UI dislay default";
+        }
+        else
+        {
+            connectToLocalServer(":S,D,C*");
+            qDebug()<<"UI dislay default";
         }
         break;
 

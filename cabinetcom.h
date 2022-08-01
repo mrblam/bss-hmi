@@ -12,6 +12,7 @@
 #include <QTimer>
 #include "Data/Model/swaprecord.h"
 #include "Data/Reposistory/SwapRecordRepo/bsshttpmethod.h"
+#include "Data/Reposistory/SwapRecordRepo/connectmonitor.h"
 typedef enum USB_PORT_NAME {
     USB_PORT_0 = 0,
     USB_PORT_1 =1,
