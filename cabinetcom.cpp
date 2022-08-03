@@ -46,7 +46,8 @@ void CabinetCom::processBSSStateMachine()//loop
     if(comHelper.getProtocolState()==CAB_PROTOCOL_ST_WAIT_RESPONSE){
         return;
     }
-//    connectMonitor::getConnectionMonitor()->checkUI(UI_DISPLAY_DEFAULT,true);
+    //heart beat
+    connectMonitor::getConnectionMonitor()->checkUI(UI_DISPLAY_DEFAULT,true);
     Cabinet* initCab=nullptr;
     switch (this->bssModel->getState()) {
     case BSS_ST_INIT:

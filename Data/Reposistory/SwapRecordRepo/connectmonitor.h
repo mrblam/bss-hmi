@@ -24,11 +24,13 @@ public:
     static connectMonitor* getConnectionMonitor();
     void checkUI(UI_DISPLAY uiDisplay, bool status);
     void connectToLocalServer(const char* data);
+    void buildMsgToRequest(const char* data,const char &sub);
 
 public slots:
 
 
 private:
+    QString buff;
     QTimer heartbeatrequest;
     QTimer heartbeatSend;
     QTcpSocket *tcpSocket;

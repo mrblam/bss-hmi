@@ -39,12 +39,12 @@ void connectMonitor::checkUI(UI_DISPLAY uiDisplay, bool status)
     case UI_DISPLAY_LOGIN:
         if(status)
         {
-            connectToLocalServer(":H,U,O*");
+            connectToLocalServer(":S,L,O*");
             qDebug()<<"LOGIN OPEN";
         }
         else
         {
-            connectToLocalServer(":H,U,C*");
+            connectToLocalServer(":S,L,C*");
             qDebug()<<"LOGIN CLOSE";
         }
         break;
@@ -77,6 +77,8 @@ void connectMonitor::checkUI(UI_DISPLAY uiDisplay, bool status)
     case UI_DISPLAY_DEFAULT:
         if(status)
         {
+
+//            buildMsgToRequest("S",'s');
             connectToLocalServer(":S,D,O*");
             qDebug()<<"UI dislay default";
         }
@@ -94,6 +96,7 @@ void connectMonitor::checkUI(UI_DISPLAY uiDisplay, bool status)
 
 void connectMonitor::connectToLocalServer(const char* data)
 {
+
     tcpSocket = new QTcpSocket(this);
     tcpSocket->connectToHost(QHostAddress::AnyIPv4,TCP_SERVER_PORT);
     if(tcpSocket->waitForConnected(3000))
@@ -109,7 +112,21 @@ void connectMonitor::connectToLocalServer(const char* data)
      else
      {
         qDebug() << "Not connected!";
-     }
+    }
+}
+
+void connectMonitor::buildMsgToRequest(const char *data,const char &sub)
+{
+
+    buff.append(":");
+    buff.append(data);
+    buff.append(',');
+    buff.append(sub);
+    buff.append(',');
+    buff.append('O');
+    buff.append('*');
+
+
 }
 
 connectMonitor* connectMonitor:: getConnectionMonitor(){
